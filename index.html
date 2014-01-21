@@ -20,15 +20,16 @@
 
   <script type="text/template" id="levelsView">
     <h1>Flown</h1>
+    <p><a id="back">Back</a></p>
     <ul>
       <li><a id="edit">Edit Levels</a></li>
       <li><a id="load">Load Levels</a></li>
-      <li><a id="back">Back</a></li>
     </ul>
   </script>
 
   <script type="text/template" id="levelPacksView">
     <h1>Level Packs</h1>
+    <p><a id="back">Back</a></p>
     <% if (levelPacks.length > 0) { %>
       <ul>
         <% _.each(levelPacks, function(levelPack) { %>
