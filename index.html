@@ -6,10 +6,45 @@
   <title>Flown</title>
 </head>
 <body>
-  <!-- library dependencies -->
+
+  <div id="stage"></div>
+
+  <!-- view templates -->
+  <script type="text/template" id="homeView">
+    <h1>Flown</h1>
+    <ul>
+      <li><a id="play">Play</a></li>
+      <li><a id="levels">Levels</a></li>
+    </ul>
+  </script>
+
+  <script type="text/template" id="levelsView">
+    <h1>Flown</h1>
+    <ul>
+      <li><a id="edit">Edit Levels</a></li>
+      <li><a id="load">Load Levels</a></li>
+      <li><a id="back">Back</a></li>
+    </ul>
+  </script>
+
+ <!-- library dependencies -->
   <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/backbone/backbone.js"></script>
+
+  <!-- main file -->
+  <script src="js/Flown.js"></script>
+
+  <!-- Backbone router -->
+  <script src="js/FlownRouter.js"></script>
+
+  <!-- Backbone views -->
+  <script src="js/Views/HomeView.js"></script>
+  <script src="js/Views/LevelsView.js"></script>
+
+  <script>
+    Flown.init();
+  </script>
 </body>
 </html>
 
