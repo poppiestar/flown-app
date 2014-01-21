@@ -27,6 +27,21 @@
     </ul>
   </script>
 
+  <script type="text/template" id="levelPacksView">
+    <h1>Level Packs</h1>
+    <% if (levelPacks.length > 0) { %>
+      <ul>
+        <% _.each(levelPacks, function(levelPack) { %>
+          <h2><%= levelPack.get('title') %></h2>
+          <p><%= levelPack.get('description') %></p>
+          <p><%= packComplete %> / <%= levelPack.get('levelCount') %></p>
+        <% }); %>
+      <ul>
+    <% } else { %>
+      <p>No level packs found!</p>
+    <% } %>
+  </script>
+
  <!-- library dependencies -->
   <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
@@ -39,8 +54,9 @@
   <script src="js/FlownRouter.js"></script>
 
   <!-- Backbone views -->
-  <script src="js/Views/HomeView.js"></script>
-  <script src="js/Views/LevelsView.js"></script>
+  <script src="js/views/HomeView.js"></script>
+  <script src="js/views/LevelsView.js"></script>
+  <script src="js/views/LevelPacksView.js"></script>
 
   <script>
     Flown.init();

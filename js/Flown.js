@@ -6,7 +6,8 @@
     Views: {},
     Models: {},
     Collections: {},
-    currentView: null
+    currentView: null,
+    levelPacks: []
   };
 
   Flown.init = function () {
