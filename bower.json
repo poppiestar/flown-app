@@ -1,0 +1,30 @@
+{
+  "name": "flown",
+  "version": "0.0.0",
+  "authors": [
+    "Drew Miller <drew@onpatrol.co>"
+  ],
+  "description": "A grid-based puzzle game.",
+  "main": "index.html",
+  "keywords": [
+    "puzzle",
+    "game",
+    "flown",
+    "grid"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
+    "backbone": "~1.1.0",
+    "normalize-css": "~2.1.3"
+  }
+}
