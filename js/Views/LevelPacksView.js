@@ -2,7 +2,11 @@
 
   'use strict';
 
-  Flown.Views.LevelPacksView = Backbone.View.extend({
+  Flown.Views.LevelPacksView = Flown.View.extend({
+
+    initialize: function () {
+      this.render();
+    },
 
     el: '#stage',
 

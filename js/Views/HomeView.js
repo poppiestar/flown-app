@@ -2,14 +2,18 @@
 
   'use strict';
 
-  Flown.Views.HomeView = Backbone.View.extend({
+  Flown.Views.HomeView = Flown.View.extend({
+
+    initialize: function() {
+      this.render();
+    },
 
     el: '#stage',
 
-    template: $('#homeView').html(),
+    template: _.template($('#homeView').html()),
 
     render: function () {
-      this.$el.html(this.template);
+      this.$el.html(this.template());
     },
 
     events: {
